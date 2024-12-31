@@ -273,3 +273,12 @@
     return fireworksField;
   };
 }(jQuery));
+// Khi người dùng nhấp vào bao thư đỏ, phát nhạc
+document.getElementById('redEnvelope').addEventListener('click', function() {
+    var audioPlayer = document.getElementById('player');
+    audioPlayer.play();  // Bắt đầu phát nhạc
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var audioPlayer = document.getElementById('player');
+    audioPlayer.play();  // Phát nhạc ngay khi trang đã tải
+});
